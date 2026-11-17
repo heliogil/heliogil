@@ -1,24 +1,25 @@
 # Hélio Gil
 
-**Marketing analytics · CRO · Lifecycle & CRM** — a marketer who builds the data behind the decision.
+**Management · Marketing · Data with AI** — a marketer who builds the data behind the decision.
 
-B.A. + postgraduate degree in Marketing · MBA in Data (TripleTen, 2026) · Brazil, remote (UTC−3, overlaps with US hours) · English: conversational
+B.A. in Advertising · MBA in Data Science & AI (TripleTen, 2026) · Brasília, Brazil (UTC−3, overlaps with US hours) · English: fluent
 
-I've run the business side (a construction company above R$25M in revenue) and now I work where marketing meets data:
+I've run the business side (founded and managed companies for over a decade) and now I work where marketing meets data:
 which leads to call first, which test to run next, and what a conversion point is worth in money.
 
 ---
 
 ## Featured work
 
-### 🎯 Bank Marketing — lead scoring for a term-deposit campaign
-*MBA final project, in progress · Python, scikit-learn, SHAP · repo goes public after the review*
+### 🔥 Wildfire risk by municipality and day — [repo](https://github.com/heliogil/risco-incendio-municipio)
+*MBA final project, approved · Python, scikit-learn, SHAP · data from INPE, MapBiomas and INMET*
 
-A bank called 41k clients to sell one product; 11% said yes. I'm building a model that ranks who to call first.
+Predicts fire risk (Low / Medium / High) for each municipality and day, using only information available the day before.
 
-- **Baseline already beats the call list:** the top 20% of the ranked list converts at ~35% vs. 11% overall (≈3× lift), about −68% cost per acquisition at the same call budget.
-- Caught a classic leak: call `duration` predicts the outcome but is only known *after* the call — dropped it, and measured what that costs in AUC.
-- Ends in decisions, not metrics: an A/B test plan for the new call order, profit in currency, SHAP drivers per segment, and a per-client talking point for the SDR.
+- Logistic regression on 8.2M fire hotspots plus land cover and weather.
+- **Beats the "today = yesterday" baseline:** macro F1 0.571 vs 0.549, and High-alert precision 57.6 vs 49.2 per 100 alerts. Estimated cost in the test period: R$420.1M vs R$434.8M.
+- Delivered explainability (SHAP), bias tests, hyperparameter tuning and an A/B test plan.
+- Declared the goal it did not reach: High-risk days warned, 51.2 vs the 60 target per 100.
 
 ### 🖥️ Rei do FPS — [reidofps.com.br](https://reidofps.com.br)
 *Product I designed and launched · SEO + affiliate model · [repo](https://github.com/heliogil/fpsreal)*
@@ -57,4 +58,4 @@ The SDR workflow, automated up to the point where judgment matters.
 
 ---
 
-📫 heliogil@gmail.com · Open to remote roles in **Marketing Analytics, CRO, Lifecycle/CRM** and **SDR/BDR**.
+📫 heliogil@gmail.com
